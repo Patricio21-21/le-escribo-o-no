@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #000;
+  color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.descripcion {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #0a0a0a;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #222;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group {
+  text-align: left;
+}
+
+label {
+  font-size: 12px;
+  color: #aaa;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background: #000;
+  color: white;
+}
+
+textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+input:focus, textarea:focus {
+  border-color: red;
+  box-shadow: 0 0 10px red;
+}
+
+#btn {
+  background: #dc2626;
+  color: white;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.loader {
+  margin-top: 15px;
+}
+
+.dots span {
+  width: 6px;
+  height: 6px;
+  background: red;
+  border-radius: 50%;
+  display: inline-block;
+  animation: bounce 1s infinite;
+}
+
+.dots span:nth-child(2) { animation-delay: 0.2s; }
+.dots span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes bounce {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.resultado {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.riesgo {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #f87171;
+}
+
+.recomendacion {
+  margin-top: 15px;
+  background: #0a0a0a;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 3px solid red;
+}
+
+.consejo {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.botones-copy {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#copiar, #otro {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#copiar { background: #1f2937; color: white; }
+#otro { background: #111; color: #f87171; border: 1px solid red; }
+
+.reset {
+  margin-top: 15px;
+  background: transparent;
+  border: 1px solid red;
+  color: red;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.oculto {
+  display: none;
+}
+
+/* 🔥 MARCA PSD */
+.marca {
+  position: fixed;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  font-weight: bold;
+  z-index: 999;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ESQUINA SUPERIOR IZQUIERDA */
+.marca-top {
+  top: 10px;
+  left: 15px;
+}
+
+/* ESQUINA INFERIOR DERECHA */
+.marca-bottom {
+  bottom: 10px;
+  right: 15px;
+}
+
+/* EFECTO SUAVE */
+.marca:hover {
+  color: rgba(255, 0, 0, 0.4);
+  transition: 0.3s;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¿Le escribo o no? 💬 Generador de mensajes con IA 🔥</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<!-- 🔥 MARCA SUPERIOR -->
+<div class="marca marca-top">PSD Software Lab</div>
+
+<!-- 🔥 MARCA INFERIOR -->
+<div class="marca marca-bottom">PSD Software Lab</div>
+
+<div class="contenedor">
+
+  <h1 class="titulo">¿Le escribo o no? 💬</h1>
+
+  <p class="descripcion">
+    Describe lo que sientes o lo que viste (foto, sonrisa, historia...)  
+    y te diré si escribirle y qué decir 😏
+  </p>
+
+  <div class="card">
+
+    <div class="input-group">
+      <label>Nombre de la persona (opcional)</label>
+      <input type="text" id="nombre" placeholder="Ej: María...">
+    </div>
+
+    <div class="input-group">
+      <label>¿Qué quieres decir o qué pasó?</label>
+      <textarea id="mensaje" placeholder="Ej: Subió una foto hermosa... o me ignora pero me gusta..."></textarea>
+    </div>
+
+    <button id="btn">
+      <span id="textoBtn">Analizar 🔥</span>
+    </button>
+
+  </div>
+
+  <div id="loader" class="loader oculto">
+    <span>Analizando</span>
+    <div class="dots">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <div id="resultado" class="resultado"></div>
+
+  <div id="riesgo" class="riesgo oculto"></div>
+
+  <div id="recomendacion" class="recomendacion oculto">
+    <p id="textoFinal"></p>
+
+    <div class="botones-copy">
+      <button id="copiar">📋 Copiar</button>
+      <button id="otro">🔄 Otra opción</button>
+    </div>
+  </div>
+
+  <div id="consejo" class="consejo oculto"></div>
+
+  <button id="reset" class="reset oculto">Intentar otra vez 🔁</button>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
